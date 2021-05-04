@@ -15,7 +15,7 @@ Apple has a REST API for App Store Connect. You call the correct endpoint and pa
 By default, Apple limits the number of objects returned via the App Connect API to 100 objects. You can increase that to 200 by appending "&limit=200" to the API call. What they don't appear to document anywhere is that there is a simple way of getting all of the records. In the JSON result set returned by the API, there is a "links" object.  It will a "self" field that contains the URL that was used to make the call. It can have an optional "next" field will contain a URL that will return the next set of objects. When you call the API, you will need to check the "next" field and call that URL until you no longer receive another "next" field in the JSON result set.
 
 ## About this version of IsUserInApple
-This is written in Python 3. It was written and tested on Windows, but it should run on MacOS and Linux. It requires a configuration file named IsUserinApple.config located in the same folder as the .py file. This file should look like this:
+This is written in Python 3. It was written and tested on Windows, but it should run on MacOS and Linux. There are also <a href="https://github.com/anotherlab/IsUserinApple-dotnet" target="_blank">C#</a> and <a href="https://github.com/anotherlab/IsUserInApple-golang" target="_blank">Go</a> versions of this code. It requires a configuration file named IsUserinApple.config located in the same folder as the .py file. This file should look like this:
 
     [settings]
     private_key = d:/scripts/AuthKey_WLBR4MD3V9.p8
