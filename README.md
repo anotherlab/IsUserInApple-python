@@ -49,5 +49,5 @@ You would run the IsUserInApple with a single command line parameter, the email 
 
 You would run it as
 
-    python IsUserInApplpl.py some.email@company.com
+    python IsUserInApple.py some.email@company.com
 
