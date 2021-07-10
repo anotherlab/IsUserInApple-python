@@ -18,7 +18,7 @@ By default, Apple limits the number of objects returned via the App Connect API 
 This is written in Python 3. It was written and tested on Windows, but it should run on MacOS and Linux. There are also <a href="https://github.com/anotherlab/IsUserinApple-dotnet" target="_blank">C#</a> and <a href="https://github.com/anotherlab/IsUserInApple-golang" target="_blank">Go</a> versions of this code. It requires a configuration file named IsUserinApple.config located in the same folder as the .py file. This file should look like this:
 
     [settings]
-    private_key = c:/scripts/AuthKey.p8
+    private_key = path/to.your/privatekey.p8
     KEY_ID = ABCDEF1234
     ISSUER_ID = d88b7c23-4c26-48fb-9d62-5649f27a25a2
 
