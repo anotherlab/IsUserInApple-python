@@ -47,7 +47,7 @@ This script uses the <a href="https://docs.python-requests.org/en/master/" targe
 ## How to run it
 You would run the IsUserInApple with a single command line parameter, the email to look for. If you leave it out, you will get an error message telling you what is needed. Remember that the IsUserInApple.config file needs to be in the same folder as the .py file.
 
-If you are running it with the dotnet command, you would run it as
+You would run it as
 
     python IsUserInApplpl.py some.email@company.com
 
