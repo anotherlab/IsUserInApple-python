@@ -7,20 +7,20 @@
 # KEY_ID = your-key-id
 # ISSUER_ID = your-issuer-id
 #
-import requests, time, json, sys, tempfile, os, configparser
+import requests, time, json, sys, tempfile, os, configparser, datetime
 from authlib.jose import jwt
 
 def getToken(KEY_ID, ISSUER_ID, PATH_TO_KEY):
-    EXPIRATION_TIME = int(round(time.time() + (20.0 * 60.0))) # 20 minutes timestamp
+    EXPIRATION_TIME = int(round(time.time() + (10.0 * 60.0))) # 10 minutes timestamp
 
-    with open(PATH_TO_KEY, 'r') as f:
+    with open(PATH_TO_KEY, 'rb') as f:
         PRIVATE_KEY = f.read()
 
     header = {
         "alg": "ES256",
-        "kid": KEY_ID,
-        "typ": "JWT"
+        "kid": KEY_ID
     }
+
 
     payload = {
         "iss": ISSUER_ID,
