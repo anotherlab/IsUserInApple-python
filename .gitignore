@@ -5,6 +5,7 @@
 
 # Project specific files
 IsUserinApple.config
+check*.txt
 
 # User-specific files
 *.rsuser
